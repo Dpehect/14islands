@@ -43,24 +43,3 @@ Each service includes a multi-stage Dockerfile optimized for production. The bui
 ### Deployment Pipeline
 The architecture supports CI/CD flows through Azure DevOps or GitHub Actions, targeting Azure Container Registry (ACR) and pushing updates to the AKS cluster.
 
-## Development Setup
-
-To initialize the development environment, ensure you have Docker and Node.js installed.
-
-1. Install root dependencies (if any shared packages exist).
-2. Configure environment variables in a .env file based on the provided examples.
-3. Start the entire cluster:
-   ```bash
-   docker-compose up --build
-   ```
-
-The frontend will be accessible at localhost:3000, while individual service APIs can be reached at their respective ports (3001 for Content, 8000 for Interaction).
-
-## Testing Protocol
-
-TDD is enforced across the backend services. To run the test suite for the content service:
-```bash
-cd apps/content-service
-npm test
-```
-This executes Vitest in a headless environment, verifying endpoint integrity and database schema logic.
