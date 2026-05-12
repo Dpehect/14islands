@@ -22,7 +22,6 @@ services:
     ports:
       - "8000:8000"
 
-  # Mock CosmosDB/MongoDB for local dev
   database:
     image: mongo:latest
     ports:

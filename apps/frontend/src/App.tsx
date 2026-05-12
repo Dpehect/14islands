@@ -10,14 +10,12 @@ import './styles/global.scss';
 const AppContent: React.FC = () => {
   useSmoothScroll();
 
-  return (
-    <main>
       <Experience />
       <Header />
       <Hero />
       <section className="container">
         <h2>Our Projects</h2>
-        <p>This will be populated from the content-service.</p>
+        <p>Featured work and digital experiences.</p>
       </section>
     </main>
   );
