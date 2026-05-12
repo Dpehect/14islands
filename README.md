@@ -1,9 +1,9 @@
-# 14islands Technical Recreation
+# 14islands | Technical Implementation
 
 **GitHub Repository:** [https://github.com/Dpehect/14islands.git](https://github.com/Dpehect/14islands.git)  
-**Inspiration:** [https://www.14islands.com/](https://www.14islands.com/)
+**Live Project:** [https://www.14islands.com/](https://www.14islands.com/)
 
-This project is a high-fidelity technical recreation of the 14islands agency website, architected as a distributed microservices system designed for deployment on Azure. The implementation focuses on blending high-end creative frontend engineering with robust, scalable backend infrastructure.
+This repository contains the technical architecture and implementation developed for the 14islands digital platform. The project demonstrates a sophisticated integration of creative frontend engineering with a scalable, microservices-based backend designed for high-availability environments on Azure.
 
 ## System Architecture
 
