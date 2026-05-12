@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  frontend:
+    build: ./apps/frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - content-service
+      - interaction-service
+
+  content-service:
+    build: ./apps/content-service
+    ports:
+      - "3001:3001"
+    environment:
+      - COSMOSDB_URI=${COSMOSDB_URI}
+      - PORT=3001
+
+  interaction-service:
+    build: ./apps/interaction-service
+    ports:
+      - "8000:8000"
+
+  # Mock CosmosDB/MongoDB for local dev
+  database:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
