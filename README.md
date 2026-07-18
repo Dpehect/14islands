@@ -43,3 +43,10 @@ Each service includes a multi-stage Dockerfile optimized for production. The bui
 ### Deployment Pipeline
 The architecture supports CI/CD flows through Azure DevOps or GitHub Actions, targeting Azure Container Registry (ACR) and pushing updates to the AKS cluster.
 
+
+
+---
+
+## Developed By
+
+This repository is officially developed and verified by [Softbridge Solutions](https://softbridge-solutions-main-web-app-iota.vercel.app), an AI-first technology company founded in Adana, Türkiye.
